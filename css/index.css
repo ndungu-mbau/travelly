@@ -1,0 +1,196 @@
+/*-----------------------------------------------
+// Resets
+-----------------------------------------------*/
+
+*{
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #555761;
+  transition-duration: 0.4s; 
+}
+
+html{
+  --primary: #3689e6;
+  --primary-dark: #0d52bf;
+  --alt: #f37329;
+  --alt-dark: #cc3b02;
+  --success: #68b723;
+  --error: #c6262e;
+  --warning: #f37329;
+  --text: #555761;
+  --text-light: #fafafa;
+  --text-dark: #273445;
+  --border-color: #273445;
+}
+
+/*-----------------------------------------------
+// Layouts
+-----------------------------------------------*/
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.column{
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  background: #3f3f3f;
+  border: 1px solid tomato;
+  height: 250px;
+  margin: 5px;
+}
+
+.column.two{ flex-grow: 2}
+.column.three{ flex-grow: 3}
+.column.four{ flex-grow: 4}
+.column.five{ flex-grow: 5}
+
+/*--------------------------------------------------------
+// Media
+--------------------------------------------------------*/
+.img-responsive{
+  width: 100%;
+  height: auto;
+}
+
+/*-------------------------------------------------------
+// Input Elements
+-------------------------------------------------------*/
+
+.input{
+  display: block;
+  outline: 0;
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+input::placeholder{
+  color:var(--text)
+}
+
+.input:focus{
+  border-color: var(--primary)
+}
+
+.label{
+  color: var(--text);
+}
+
+/*--------------------------------------------------------
+// TYpography Elements
+--------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+  color: var(--text-dark)
+}
+
+h1{
+  font-size: 3em;
+  font-weight: 200;
+}
+
+h2{
+  font-size: 2.4em;
+  font-weight: 400
+}
+
+h3{
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+p{
+  color: var(--text-dark);
+  letter-spacing: 2px;
+}
+
+.text-underline{
+  text-decoration: underline solid var(--text-dark);
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-justified{
+  text-align: justify;
+}
+
+/*---------------------------------------------
+// Buttons
+---------------------------------------------*/
+.btn{
+  height: 32px;
+  min-width: 128px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+  outline: 0;
+}
+
+.btn:hover{
+  color: var(--text-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn.btn-primary{
+  background-color: var(--primary);
+  border: 1px solid var(--primary)
+}
+
+.btn.btn-primary:hover{
+  color: var(--primary);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn.btn-success{
+  background-color: var(--success);
+  border: 1px solid var(--success)
+}
+
+.btn.btn-success:hover{
+  color: var(--success);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn.btn-error{
+  background-color: var(--error);
+  border: 1px solid var(--error)
+}
+
+.btn.btn-error:hover{
+  color: var(--error);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn.btn-warning{
+  background-color: var(--warning);
+  border: 1px solid var(--warning)
+}
+
+.btn.btn-warning:hover{
+  color: var(--warning);
+  background-color: transparent;
+  cursor: pointer;
+}
