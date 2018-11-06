@@ -138,7 +138,7 @@ p{
   min-width: 128px;
   padding: 8px;
   margin: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: var(--border-color);
   border: 1px solid var(--border-color);
   color: var(--text-light);
@@ -151,9 +151,19 @@ p{
   cursor: pointer;
 }
 
+.btn.btn-outline{
+  color: var(--text-dark);
+  background-color: transparent;
+}
+
 .btn.btn-primary{
   background-color: var(--primary);
   border: 1px solid var(--primary)
+}
+
+.btn.btn-primary.btn-outline{
+  color: var(--primary);
+  background-color: transparent;
 }
 
 .btn.btn-primary:hover{
@@ -167,6 +177,11 @@ p{
   border: 1px solid var(--success)
 }
 
+.btn.btn-success.btn-outline{
+  color: var(--success);
+  background-color: transparent;
+}
+
 .btn.btn-success:hover{
   color: var(--success);
   background-color: transparent;
@@ -178,6 +193,11 @@ p{
   border: 1px solid var(--error)
 }
 
+.btn.btn-error.btn-outline{
+  color: var(--text-dark);
+  background-color: transparent;
+}
+
 .btn.btn-error:hover{
   color: var(--error);
   background-color: transparent;
@@ -187,6 +207,11 @@ p{
 .btn.btn-warning{
   background-color: var(--warning);
   border: 1px solid var(--warning)
+}
+
+.btn.btn-warning.btn-outline{
+  color: var(--text-dark);
+  background-color: transparent;
 }
 
 .btn.btn-warning:hover{
